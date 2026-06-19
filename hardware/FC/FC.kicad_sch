@@ -6419,6 +6419,12 @@
 		(uuid "9c152ecd-b756-436b-8071-2e4084d5cad7")
 	)
 	(junction
+		(at 345.44 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e58087f-42ea-4bb9-ba9d-0ac348a85c23")
+	)
+	(junction
 		(at 97.79 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8078,7 +8084,7 @@
 	)
 	(wire
 		(pts
-			(xy 341.63 39.37) (xy 350.52 39.37)
+			(xy 341.63 39.37) (xy 345.44 39.37)
 		)
 		(stroke
 			(width 0)
@@ -8668,6 +8674,16 @@
 	)
 	(wire
 		(pts
+			(xy 345.44 39.37) (xy 350.52 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e351bf22-2dec-45e1-9735-84552a23d998")
+	)
+	(wire
+		(pts
 			(xy 106.68 185.42) (xy 106.68 184.15)
 		)
 		(stroke
@@ -8985,6 +9001,16 @@
 			(justify left bottom)
 		)
 		(uuid "2cef1bce-2acb-466e-844f-16b54e99521f")
+	)
+	(label "VSYS"
+		(at 350.52 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e378a21-3ee3-4901-8e50-e74d2f9c2fe2")
 	)
 	(label "BMP_INT"
 		(at 170.18 165.1 0)
@@ -13967,85 +13993,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 350.52 39.37 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "71e95f74-5bfc-4e40-92e7-3823fb8b1a21")
-		(property "Reference" "#PWR047"
-			(at 346.71 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 354.33 39.3699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 350.52 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 350.52 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 350.52 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2f7d6372-6b69-4b87-b35f-7ace86cb31bb")
-		)
-		(instances
-			(project "FC"
-				(path "/392fbde6-20e0-4c59-b12e-738d483cde55"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 227.33 64.77 0)
 		(unit 1)
@@ -16073,7 +16020,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MANUFACTURER" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 210.82 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -17050,6 +16997,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 345.44 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0eed2dc-4336-4e48-b30e-ec84bbc995ef")
+		(property "Reference" "#FLG02"
+			(at 345.44 37.465 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 345.44 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 345.44 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 345.44 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 345.44 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dafd7b0e-98e2-4c19-b6ab-543205c9c39f")
+		)
+		(instances
+			(project "FC"
+				(path "/392fbde6-20e0-4c59-b12e-738d483cde55"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 356.87 152.4 0)
 		(unit 1)
@@ -17738,7 +17763,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MANUFACTURER" "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 77.47 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -18301,7 +18326,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 112.522 237.49 90)
 			(hide yes)
 			(show_name no)

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "RADIO_SOLDER_PADS") (type "KiCad") (uri "C:/Users/micha/Desktop/repozytoria/FC-/hardware/lib/RADIO_SOLDER_PADS.pretty") (options "") (descr ""))
+)
